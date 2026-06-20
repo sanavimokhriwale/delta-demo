@@ -1,0 +1,39 @@
+// to calculate armstrong values
+import java.util.*;
+
+public class javaBasics{
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      int n = sc.nextInt();
+      int orginal = n;
+      int temp =n;
+      // int digit =0 ;
+      int sum =0;
+      int counter = 0;
+      int rem =0;
+      while (n!=0) {
+        // digit= n % 10;
+         counter++;
+         n=n/10;
+        
+      }
+        System.out.println(counter);
+
+        while (temp!=0) {
+          rem=temp%10;
+          sum += Math.pow(rem,counter);
+          temp=temp/10;
+          
+        } 
+        System.out.println(sum);
+
+        if(sum==orginal){
+          System.out.println("this is armstrong number");
+
+        }else{
+          System.out.println("this number is not armstrong");
+        }
+      
+      }
+            
+    }
